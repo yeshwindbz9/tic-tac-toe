@@ -1,0 +1,66 @@
+body {
+  font-family: "Rubik Glitch Pop", system-ui;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: whitesmoke;
+  color: cadetblue;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctrl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#reset-btn {
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 900;
+  color: cadetblue;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid cadetblue;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.grid-ele {
+  background-color: white;
+  border: 2px outset cadetblue;
+  border-radius: 9px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-ele:hover,
+#reset-btn:hover {
+  background-color: lightgray;
+}
